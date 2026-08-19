@@ -11,7 +11,6 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-
 -----------------------------------------------------------
 -- Options
 -----------------------------------------------------------
@@ -162,6 +161,20 @@ require("lazy").setup({
 
 
     -------------------------------------------------------
+    -- GitSigns
+    -------------------------------------------------------
+    {
+        "lewis6991/gitsigns.nvim",
+        config = function()
+        require("gitsigns").setup({
+            signcolumn = false, -- Deletes the dedicated git sign column
+            numhl      = true,  -- Highlights the line number for git changes instead
+            })
+    end
+    },
+
+
+    -------------------------------------------------------
     -- Goyo
     -------------------------------------------------------
     {
@@ -183,7 +196,6 @@ require("lazy").setup({
 
         config = true,
     },
-
 
     -------------------------------------------------------
     -- Mini.nvim utilities
