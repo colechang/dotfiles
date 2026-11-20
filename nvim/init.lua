@@ -173,7 +173,6 @@ require("lazy").setup({
     end
     },
 
-
     -------------------------------------------------------
     -- Goyo
     -------------------------------------------------------
@@ -325,6 +324,6 @@ highlight NormalNC guibg=NONE
 -- Theme Colours Specs
 -----------------------------------------------------------
 vim.g.everforest_background = "hard"
-vim.g.everforest_transparent_background = 0
+vim.g.everforest_transparent_background = 1
 
 vim.cmd.colorscheme("everforest")
