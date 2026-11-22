@@ -101,7 +101,7 @@ require("lazy").setup({
         config = function()
             require("everforest").setup({
                 background = "hard",
-
+                transparent_background_level = 2,
                 italics = true,
             })
 
@@ -320,10 +320,3 @@ highlight Normal guibg=NONE
 highlight NormalNC guibg=NONE
 ]])
 
-----------------------------------------------------------
--- Theme Colours Specs
------------------------------------------------------------
-vim.g.everforest_background = "hard"
-vim.g.everforest_transparent_background = 1
-
-vim.cmd.colorscheme("everforest")
